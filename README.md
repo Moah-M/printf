@@ -2,7 +2,9 @@
 
 create our own customized printf function in C.
 
-##function overview
+#function overview
+
+
 Printf function in C is buit for the purpose of sending the formated string to the standard input output header file which is stdio.h. this string can display formatted variables and special control characters, such as new lines("\n"), backspaces('\b') and tabspaces('\t') and so on.
 
 The prototype that we use will be "int_printf(const char* format, ...)" where format: this is the string that contains the text to be written to stdout. It can optinally contain embedded format tags that are replaced by the values specified in subsewuent additional aarguments and formatted as requested.
