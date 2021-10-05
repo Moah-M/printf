@@ -17,7 +17,7 @@ int foroctal(va_list *ap)
  * @ap: va_list object
  * Return: chars printed
  **/
-int mkhexstring(va_list *ap)
+int forhexstring(va_list *ap)
 {
 	return (p_hexstring(va_arg(*ap, char *)));
 }
