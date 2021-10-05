@@ -17,7 +17,7 @@ int p_hexcap(unsigned int num);
 int p_octal(unsigned int num);
 int p_uint(unsigned int num);
 int p_hex(unsigned int num);
-
+int _putchar(char c);
 int mkstring(va_list *);
 int mkchar(va_list *);
 int mkint(va_list *);
