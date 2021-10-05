@@ -1,5 +1,5 @@
-#ifndef _PRINT_FUNCTION_H_
-#define _PRINT_FUNCTION_H_
+#ifndef _MAIN_H_
+#define _MAIN_H_
 #include <stdarg.h>
 
 int _printf(const char *format, ...);
@@ -29,10 +29,10 @@ int mkhexstring(va_list *);
 int mkunsigned(va_list *);
 
 /**
- * struct flag -flag object
- * @letter: flag char
- * @prnt: print function pointer
- * Descriptions: contains flag letter and corresponding print function
+ * struct flag - struct type identifier
+ * @letter: first var
+ * @prnt: second var
+ * Descriptions: flag identifier
  **/
 typedef struct flag
 {
