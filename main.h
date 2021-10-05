@@ -18,15 +18,15 @@ int p_octal(unsigned int num);
 int p_uint(unsigned int num);
 int p_hex(unsigned int num);
 int _putchar(char c);
-int mkstring(va_list *);
-int mkchar(va_list *);
-int mkint(va_list *);
-int mkbin(va_list *);
-int mkhex(va_list *);
-int mkhexcap(va_list *);
-int mkoctal(va_list *);
-int mkhexstring(va_list *);
-int mkunsigned(va_list *);
+int forstring(va_list *);
+int forchar(va_list *);
+int forint(va_list *);
+int forbin(va_list *);
+int forhex(va_list *);
+int forhexcap(va_list *);
+int foroctal(va_list *);
+int forhexstring(va_list *);
+int forunsigned(va_list *);
 
 /**
  * struct flag - struct type identifier

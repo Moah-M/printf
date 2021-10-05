@@ -3,51 +3,51 @@
 #include <stdlib.h>
 
 /**
- * mkstring - makes object into string
- * @ap: va_list object
- * Return: chars printed
+ * forstring - main function for string print
+ * @ap: first var
+ * Return: char is returned
  **/
-int mkstring(va_list *ap)
+int forstring(va_list *ap)
 {
 	return (p_string(va_arg(*ap, char *)));
 }
 
 /**
- * mkint - makes object into int
- * @ap: va_list object
- * Return: digits printed
+ * forint - main function for int print
+ * @ap: first var
+ * Return: number is returned
  **/
-int mkint(va_list *ap)
+int forint(va_list *ap)
 {
 	return (p_int(va_arg(*ap, int)));
 }
 
 /**
- * mkchar - makes object into char
- * @ap: va_list object
- * Return: chars printed
+ * forchar - main function for char print
+ * @ap: first var
+ * Return: char is returned
  **/
-int mkchar(va_list *ap)
+int forchar(va_list *ap)
 {
 	return (_putchar(va_arg(*ap, int)));
 }
 
 /**
- * mkbin - makes object into int, print as binary
- * @ap: va_list object
- * Return: chars printed
+ * forbin - main function for binary converter
+ * @ap: first var
+ * Return: char is returned
  **/
-int mkbin(va_list *ap)
+int forbin(va_list *ap)
 {
 	return (p_bin(va_arg(*ap, unsigned int)));
 }
 
 /**
- * mkhex - makes object into string, print ascii for non-printable
- * @ap: va_list object
- * Return: chars printed
+ * forhex - main function for hexadecimal conversion
+ * @ap: first var
+ * Return: char letter is returned
  **/
-int mkhex(va_list *ap)
+int forhex(va_list *ap)
 {
 	return (p_hex(va_arg(*ap, int)));
 }

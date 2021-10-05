@@ -3,17 +3,17 @@
 #include <stdlib.h>
 
 /**
- * mkoctal - makes object into octal int
- * @ap: va_list object
- * Return: chars printed
+ * foroctal - main object for octal int
+ * @ap: first var
+ * Return: chars returned
  **/
-int mkoctal(va_list *ap)
+int foroctal(va_list *ap)
 {
 	return (p_octal(va_arg(*ap, unsigned int)));
 }
 
 /**
- * mkhexstring - makes object into string
+ * forhexstring - makes object into string
  * @ap: va_list object
  * Return: chars printed
  **/
@@ -23,21 +23,21 @@ int mkhexstring(va_list *ap)
 }
 
 /**
- * mkunsigned - makes object into unsigned int
+ * forunsigned - makes object into unsigned int
  * @ap: va_list object
  * Return: chars printed
  **/
-int mkunsigned(va_list *ap)
+int forunsigned(va_list *ap)
 {
 	return (p_uint(va_arg(*ap, unsigned int)));
 }
 
 /**
- * mkhexcap - makes object into hex with cap
+ * forhexcap - makes object into hex with cap
  * @ap: va_list object
  * Return: chars printed
  **/
-int mkhexcap(va_list *ap)
+int forhexcap(va_list *ap)
 {
-	return (p_hexcap(va_arg(*ap, unsigned int)));
+		return (p_hexcap(va_arg(*ap, unsigned int)));
 }
