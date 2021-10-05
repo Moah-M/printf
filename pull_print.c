@@ -1,5 +1,5 @@
 #include <stdarg.h>
-#include "main.h"
+#include "holberton.h"
 #include <stdlib.h>
 
 /**
@@ -12,16 +12,16 @@ int pull_print(char c, va_list *ap)
 {
 	int i;
 	find_flag flags[] = {
-		{'d', mkint},
-		{'i', mkint},
-		{'c', mkchar},
-		{'s', mkstring},
-		{'b', mkbin},
-		{'S', mkhexstring},
-		{'x', mkhex},
-		{'X', mkhexcap},
-		{'u', mkunsigned},
-		{'o', mkoctal},
+		{'d', forint},
+		{'i', forint},
+		{'c', forchar},
+		{'s', forstring},
+		{'b', forbin},
+		{'S', forhexstring},
+		{'x', forhex},
+		{'X', forhexcap},
+		{'u', forunsigned},
+		{'o', foroctal},
 		{'\0', NULL}
 	};
 
@@ -39,4 +39,3 @@ int pull_print(char c, va_list *ap)
 	}
 	return (0);
 }
-
