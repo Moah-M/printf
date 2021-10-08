@@ -27,7 +27,6 @@ int forhexcap(va_list *);
 int foroctal(va_list *);
 int forhexstring(va_list *);
 int forunsigned(va_list *);
-int print_reverse(char *s);
 /**
  * struct flag - struct type identifier
  * @letter: first var
