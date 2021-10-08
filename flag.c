@@ -1,6 +1,4 @@
-
 #include "main.h"
-
 /**
  * get_flags - turns on flags if _printf finds
  * a flag modifier in the format string
@@ -9,7 +7,7 @@
  *
  * Return: 1 if a flag has been turned on, 0 otherwise
  */
-int get_flags(char s, mods *f)
+int get_flags(char s, char *f)
 {
 	bool modifier = true;
 

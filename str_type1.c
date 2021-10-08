@@ -51,3 +51,4 @@ int forhex(va_list *ap)
 {
 	return (p_hex(va_arg(*ap, int)));
 }
+
